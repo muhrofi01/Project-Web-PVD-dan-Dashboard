@@ -72,9 +72,9 @@
                     <div class="dropdown-menu" style="z-index: 10000000; width: 500px; border-radius: 15px;" aria-labelledby="dropdownInfo">
                       <p class="pl-3 pr-3">
                         <ul style="list-style-type:disc">
-                          <li>Tujuan 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolorum optio pariatur velit nisi repudiandae! Cumque qui nobis cupiditate hic quibusdam nemo totam cum blanditiis! Aspernatur possimus similique ullam error.</li>
-                          <li>Tujuan 2: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium vel commodi consectetur temporibus nam sit? Qui mollitia architecto dignissimos ipsam tempora, blanditiis amet? Placeat assumenda iusto ea hic quas ducimus!</li>
-                          <li>Tujuan 3: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium vel commodi consectetur temporibus nam sit? Qui mollitia architecto dignissimos ipsam tempora, blanditiis amet? Placeat assumenda iusto ea hic quas ducimus!</li>
+                          <li style="text-align: justify; padding-right: 2.5em;">Tujuan 1 <br>Membangun model terbaik untuk klasifikasi tutupan lahan berdasarkan data citra satelit di Bandung Barat dan Purwakarta.</li>
+                          <li style="text-align: justify; padding-right: 2.5em;">Tujuan 2 <br>Menganalisis alih fungsi lahan terutama untuk lahan pertanian berdasarkan data citra satelit di Bandung Barat dan Purwakarta.</li>
+                          <li style="text-align: justify; padding-right: 2.5em;">Tujuan 3 <br>Melakukan <i>groundchecking</i> untuk evaluasi model klasifikasi tutupan lahan di Bandung Barat & Purwakarta.</li>
                         </ul>
                       </p>
                     </div>

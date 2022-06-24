@@ -71,7 +71,7 @@
                     <div class="dropdown-menu" style="z-index: 10000000; width: 500px; border-radius: 15px;" aria-labelledby="dropdownInfo">
                       <p class="pl-3 pr-3">
                         <ul style="list-style-type:disc">
-                          <li>Tujuan 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolorum optio pariatur velit nisi repudiandae! Cumque qui nobis cupiditate hic quibusdam nemo totam cum blanditiis! Aspernatur possimus similique ullam error.</li>
+                          <li style="text-align: justify; padding-right: 2.5em;">Tujuan 1 <br>Mengetahui karakteristik alih fungsi lahan pertanian di Bandung Barat dan Purwakarta.</li>
                         </ul>
                       </p>
                     </div>

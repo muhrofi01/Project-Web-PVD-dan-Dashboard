@@ -124,7 +124,7 @@ integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf
             <div class="dropdown-menu" style="z-index: 10000000; width: 500px; border-radius: 15px;" aria-labelledby="dropdownInfo">
               <p class="pl-3 pr-3">
                 <ul style="list-style-type:disc">
-                  <li>Tujuan 2: adalah Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem qui, odit cupiditate doloremque ducimus debitis dolorem a fugit sed? Cum adipisci, inventore modi sunt itaque nobis beatae eveniet fugit! Illum?</li>
+                  <li style="text-align: justify; padding-right: 2.5em;">Tujuan 2 <br>Mengetahui alasan petani pemilik lahan melakukan alih fungsi lahan di Bandung Barat dan Purwakarta.</li>
                 </ul>
               </p>
             </div>
