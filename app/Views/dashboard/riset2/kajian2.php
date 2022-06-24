@@ -429,7 +429,7 @@
     });
 
     ctx = document.getElementById('visualisasi3a').getContext('2d');
-    barChart = new Chart(ctx, {
+    pieChart = new Chart(ctx, {
       type: 'pie',
       data: {
         labels: [
@@ -473,7 +473,7 @@
     });
 
     ctx = document.getElementById('visualisasi3b').getContext('2d');
-    barChart = new Chart(ctx, {
+    pieChart = new Chart(ctx, {
       type: 'pie',
       data: {
         labels: [
@@ -562,7 +562,7 @@
 
 
     ctx = document.getElementById('visualisasi12').getContext('2d');
-    barChart = new Chart(ctx, {
+    pieChart = new Chart(ctx, {
       type: 'pie',
       data: {
         labels: [
@@ -605,7 +605,7 @@
     });
 
     ctx = document.getElementById('visualisasi14').getContext('2d');
-    barChart = new Chart(ctx, {
+    pieChart = new Chart(ctx, {
       type: 'pie',
       data: {
         labels: [
@@ -646,7 +646,7 @@
     });
 
     ctx = document.getElementById('visualisasi16').getContext('2d');
-    barChart = new Chart(ctx, {
+    pieChart = new Chart(ctx, {
       type: 'pie',
       data: {
         labels: [
@@ -690,7 +690,7 @@
     });
 
     ctx = document.getElementById('visualisasi24').getContext('2d');
-    barChart = new Chart(ctx, {
+    pieChart = new Chart(ctx, {
       type: 'pie',
       data: {
         labels: [
@@ -732,7 +732,7 @@
     });
 
     ctx = document.getElementById('visualisasi18a').getContext('2d');
-    barChart = new Chart(ctx, {
+    pieChart = new Chart(ctx, {
       type: 'pie',
       data: {
         labels: [
@@ -872,16 +872,19 @@
           intersect: true
         }
     }
-
     var chart = new ApexCharts(document.querySelector("#visualisasi18c"), options);
     chart.render();
 
     //19 a
     ctx = document.getElementById('visualisasi19a').getContext('2d');
-    barChart = new Chart(ctx, {
+    pieChart = new Chart(ctx, {
       type: 'pie',
       data: {
-        labels: ['Rendah (<=50)', 'Sedang (51-100)', 'Tinggi (>100)'],
+        labels: [
+          ['Rendah (<=50)'], 
+          ['Sedang (51-100)'], 
+          ['Tinggi (>100)'],
+        ],
           datasets: [
             {
               label:  'Bandung Barat',
@@ -892,8 +895,8 @@
                 '#508d4f'
               ],
               borderWidth: 0
-          }
-        ],
+            }
+          ],
       },
       options: {
           scales: {
@@ -904,8 +907,17 @@
                 "fontSize": 15,
             },
             "position": "right"
-        },
-      }
+        },      
+        plugins: {
+          tooltip:{
+            callbacks: {
+              label: function (ctx, data) {
+                return ctx.label[0] + " : " + parseFloat(ctx.dataset.data[ctx.dataIndex]).toFixed(2) + "%";
+              }
+            }
+          }
+        }
+      },
     });
 
     // 19c
