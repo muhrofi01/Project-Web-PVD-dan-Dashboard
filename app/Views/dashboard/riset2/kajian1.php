@@ -2477,6 +2477,7 @@
 
   // Tujuan 2
   $(function () {
+    if (window.location.href.endsWith("#tab2")) document.getElementById("tab-2").click();
     ctx = document.getElementById('barChartKBB').getContext('2d');
     barChart = new Chart(ctx, {
       type: 'bar',

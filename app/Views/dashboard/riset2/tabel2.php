@@ -49,7 +49,7 @@
     <section class="content-header">
       <div class="container-fluid pl-4" style="color: rgb(0, 75, 60);">
         <div class="row mb-0 baris-judul-riset">
-          <div class="col-sm-10" data-aos="fade-right" data-aos-duration="1200">
+          <div class="col-sm-10">
             <h3 class="judul-riset">Karakteristik dan Faktor-Faktor yang Mempengaruhi Alih Fungsi Lahan Pertanian</h3>
           </div>
         </div>

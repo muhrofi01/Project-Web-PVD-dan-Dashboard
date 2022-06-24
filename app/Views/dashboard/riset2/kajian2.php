@@ -371,17 +371,18 @@
             },
             "position": "right"
         },
-        plugin: {
+        plugins: {
           tooltip:{
             callbacks: {
               label: function (ctx, data) {
-                return data.labels[ctx.index] + " : " + data.datasets[0].data[ctx.index] + "%";
+                return ctx.label[0] + " : " + parseFloat(ctx.dataset.data[ctx.dataIndex]).toFixed(2) + "%";
               }
             }
           }
         }
       }
     });
+    
 
     ctx = document.getElementById('visualisasi2').getContext('2d');
     pieChart = new Chart(ctx, {
@@ -415,11 +416,11 @@
             },
             "position": "right"
         },
-        plugin: {
+        plugins: {
           tooltip:{
             callbacks: {
               label: function (ctx, data) {
-                return data.labels[ctx.index] + " : " + data.datasets[0].data[ctx.index] + "%";
+                return ctx.label[0] + " : " + parseFloat(ctx.dataset.data[ctx.dataIndex]).toFixed(2) + "%";
               }
             }
           }
@@ -459,10 +460,12 @@
             },
             "position": "right"
         },
-        tooltips:{
-          callbacks: {
-            label: function (ctx, data) {
-              return data.labels[ctx.index] + " : " + data.datasets[0].data[ctx.index] + "%";
+        plugins: {
+          tooltip:{
+            callbacks: {
+              label: function (ctx, data) {
+                return ctx.label[0] + " : " + parseFloat(ctx.dataset.data[ctx.dataIndex]).toFixed(2) + "%";
+              }
             }
           }
         }
@@ -501,11 +504,11 @@
             },
             "position": "right"
         },
-        plugin: {
+        plugins: {
           tooltip:{
             callbacks: {
               label: function (ctx, data) {
-                return data.labels[ctx.index] + " : " + data.datasets[0].data[ctx.index] + "%";
+                return ctx.label[0] + " : " + parseFloat(ctx.dataset.data[ctx.dataIndex]).toFixed(2) + "%";
               }
             }
           }
@@ -545,11 +548,11 @@
             },
             "position": "right"
         },
-        plugin: {
+        plugins: {
           tooltip:{
             callbacks: {
               label: function (ctx, data) {
-                return data.labels[ctx.index] + " : " + data.datasets[0].data[ctx.index] + "%";
+                return ctx.label[0] + " : " + parseFloat(ctx.dataset.data[ctx.dataIndex]).toFixed(2) + "%";
               }
             }
           }
@@ -563,9 +566,9 @@
       type: 'pie',
       data: {
         labels: [
-            '<1000 m²', 
-            '1001-2000 m²', 
-            '>2000 m²' 
+            ['<1000 m²'], 
+            ['1001-2000 m²'], 
+            ['>2000 m²'] 
           ],
           datasets: [
             {
@@ -589,11 +592,11 @@
             },
             "position": "right"
         },
-        plugin: {
+        plugins: {
           tooltip:{
             callbacks: {
               label: function (ctx, data) {
-                return data.labels[ctx.index] + " : " + data.datasets[0].data[ctx.index] + "%";
+                return ctx.label[0] + " : " + parseFloat(ctx.dataset.data[ctx.dataIndex]).toFixed(2) + "%";
               }
             }
           }
@@ -606,8 +609,8 @@
       type: 'pie',
       data: {
         labels: [
-            'Beli', 
-            'Warisan' 
+            ['Beli'], 
+            ['Warisan'] 
           ],
           datasets: [
             {
@@ -630,11 +633,11 @@
             },
             "position": "right"
         },
-        plugin: {
+        plugins: {
           tooltip:{
             callbacks: {
               label: function (ctx, data) {
-                return data.labels[ctx.index] + " : " + data.datasets[0].data[ctx.index] + "%";
+                return ctx.label[0] + " : " + parseFloat(ctx.dataset.data[ctx.dataIndex]).toFixed(2) + "%";
               }
             }
           }
@@ -642,12 +645,15 @@
       }
     });
 
-
     ctx = document.getElementById('visualisasi16').getContext('2d');
     barChart = new Chart(ctx, {
       type: 'pie',
       data: {
-        labels: ['Rendah (1-700 m²)', 'Sedang (701-1400 m²)', 'Tinggi (>1400 m²)'],
+        labels: [
+          ['Rendah (1-700 m²)'], 
+          ['Sedang (701-1400 m²)'], 
+          ['Tinggi (>1400 m²)']
+        ],
           datasets: [
           {
               label: '# of Votes',
@@ -671,11 +677,11 @@
             },
             "position": "right"
         },
-        plugin: {
+        plugins: {
           tooltip:{
             callbacks: {
               label: function (ctx, data) {
-                return data.labels[ctx.index] + " : " + data.datasets[0].data[ctx.index] + "%";
+                return ctx.label[0] + " : " + parseFloat(ctx.dataset.data[ctx.dataIndex]).toFixed(2) + "%";
               }
             }
           }
@@ -687,7 +693,10 @@
     barChart = new Chart(ctx, {
       type: 'pie',
       data: {
-        labels: ['Melalui Transaksi Penjualan', 'Bukan Melalui Transaksi Penjualan'],
+        labels: [
+          ['Melalui Transaksi Penjualan'], 
+          ['Bukan Melalui Transaksi Penjualan'],
+        ],
           datasets: [
             {
               label: 'Bandung Barat',
@@ -710,11 +719,11 @@
             },
             "position": "right"
         },
-        plugin: {
+        plugins: {
           tooltip:{
             callbacks: {
               label: function (ctx, data) {
-                return data.labels[ctx.index] + " : " + data.datasets[0].data[ctx.index] + "%";
+                return ctx.label[0] + " : " + parseFloat(ctx.dataset.data[ctx.dataIndex]).toFixed(2) + "%";
               }
             }
           }
@@ -726,7 +735,11 @@
     barChart = new Chart(ctx, {
       type: 'pie',
       data: {
-        labels: ['Rendah (1-250)', 'Sedang (251-500)', 'Tinggi (>500)'],
+        labels: [
+          ['Rendah (1-250)'], 
+          ['Sedang (251-500)'], 
+          ['Tinggi (>500)'],
+        ],
           datasets: [
             {
               label:  'Bandung Barat',
@@ -750,11 +763,11 @@
             },
             "position": "right"
         },
-        plugin: {
+        plugins: {
           tooltip:{
             callbacks: {
               label: function (ctx, data) {
-                return data.labels[ctx.index] + " : " + data.datasets[0].data[ctx.index] + "%";
+                return ctx.label[0] + " : " + parseFloat(ctx.dataset.data[ctx.dataIndex]).toFixed(2) + "%";
               }
             }
           }
@@ -1132,6 +1145,7 @@ $(function () {
   <script>
   // Tujuan 2 (BIVARIATE SCATTERPLOT MORAN)
   $(function () {
+    if (window.location.href.endsWith("#tab2")) document.getElementById("tab-2").click();
     ctx = document.getElementById('moransc').getContext('2d');
     
     const moran_pointSize = 3.5;
@@ -1239,63 +1253,63 @@ $(function () {
         type: 'scatter',
         data: data_moran,
         options: {
-            scales : {
-                yAxes: {
-                    title: {
-                        display: true,
-                        text: 'Spatial Lag'
-                    },
-                    max: 2,
-                    min: -1.5
-                },
-                xAxes: {
-                    title: {
-                        display: true,
-                        text: 'Laju Alih Fungsi Lahan'
-                    },
-                    min: -2,
-                    max: 2
-                }
-            }, 
-            plugins : {
-                legend : {
-                    display : true,
-                    position: 'right',
-                    title : {
-                        display: true,
-                        text: 'Klaster'
-                    },
-                    labels : {
-                        filter: function(item, chart) {
-                            return item.text !== undefined;
-                        },
-                        boxWidth : 13
-                    },
-                    usePointStyle: true
-                },
-                tooltip: {
-                    callbacks: {
-                        label: function(t, d) {
-                          var dat = t.raw;
-                          var xlabel = dat.x.toFixed(3);
-                          var ylabel = dat.y.toFixed(3);
+          scales : {
+              yAxes: {
+                  title: {
+                      display: true,
+                      text: 'Spatial Lag'
+                  },
+                  max: 2,
+                  min: -1.5
+              },
+              xAxes: {
+                  title: {
+                      display: true,
+                      text: 'Laju Alih Fungsi Lahan'
+                  },
+                  min: -2,
+                  max: 2
+              }
+          }, 
+          plugins : {
+              legend : {
+                  display : true,
+                  position: 'right',
+                  title : {
+                      display: true,
+                      text: 'Klaster'
+                  },
+                  labels : {
+                      filter: function(item, chart) {
+                          return item.text !== undefined;
+                      },
+                      boxWidth : 13
+                  },
+                  usePointStyle: true
+              },
+              tooltip: {
+                  callbacks: {
+                      label: function(t, d) {
+                        var dat = t.raw;
+                        var xlabel = dat.x.toFixed(3);
+                        var ylabel = dat.y.toFixed(3);
 
-                          return  ['Kab :  ' + dat.kab,  'Kec :  ' + dat.kec,  '(' + xlabel + ', ' + ylabel + ')'];
-                        }
-                    }
-                },
-                subtitle: {
-                    display: true,
-                    text: 'Indeks Moran: 0.6247',
-                    align: 'start',
-                    font : {
-                        size: 15
-                    },
-                    padding:{
-                        bottom: 20
-                    }
-                }
-            }
+                        return  ['Kab :  ' + dat.kab,  'Kec :  ' + dat.kec,  '(' + xlabel + ', ' + ylabel + ')'];
+                      }
+                  }
+              },
+              subtitle: {
+                  display: true,
+                  text: 'Indeks Moran: 0.6247',
+                  align: 'start',
+                  font : {
+                      size: 15
+                  },
+                  padding:{
+                      bottom: 20
+                  }
+              }
+          }
         }
     };
     moranScPlot = new Chart(ctx, moran_config);
