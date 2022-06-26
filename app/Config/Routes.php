@@ -33,7 +33,9 @@ $routes->setAutoRoute(true);
     LOGIN
 */
 $routes->get('login', 'Auth::login_khusus');
-$routes->get('login-manual', 'Auth::login_umum');
+// $routes->get('login-manual', 'Auth::login_umum');
+$routes->get('login-umum', 'Auth::login_umum');
+$routes->get('register', 'Auth::registration');
 
 /*
     LANDING_PAGE

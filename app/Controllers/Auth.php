@@ -9,6 +9,10 @@ class Auth extends BaseController
     }
 
     public function login_umum(){
-        return view('dashboard/login_manual');
+        return view('dashboard/login_umum');
+    }
+
+    public function registration(){
+        return view('dashboard/register');
     }
 }

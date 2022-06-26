@@ -99,7 +99,7 @@
                     <!-- Visualisasi 2 Pie Chart -->
                     <div class="card">
                       <div class="py-3 px-3 d-flex justify-content-between border-bottom">
-                        <h3 class="card-title">Persentase (%) Jumlah Anggota Rumah Tangga Petani<br>Pelaku Alih Fungsi Lahan di Kabupaten Bandung Barat dan Purwakarta</h3>
+                        <h3 class="card-title">Persentase (%) Jumlah Anggota Rumah Tangga (ART) Petani Pelaku Alih Fungsi Lahan di Kabupaten Bandung Barat dan Purwakarta</h3>
                         <i class="fas fa-download hover download" onclick="download(this)" data-id="visualisasi2" data-judul="Chart_Kajian2"></i>
                       </div>
                       <div class="card-body">
@@ -1154,6 +1154,7 @@ $(function () {
   </script>
   
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
   <script>
   // Tujuan 2 (BIVARIATE SCATTERPLOT MORAN)
   $(function () {
